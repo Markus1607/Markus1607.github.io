@@ -1,3 +1,8 @@
 module.exports = {
-  basePath: "/",
+  exportPathMap: function () {
+    return {
+      "/": { page: "/" },
+      "/about": { page: "/about" },
+    };
+  },
 };
